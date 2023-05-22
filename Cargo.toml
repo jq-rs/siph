@@ -1,0 +1,18 @@
+[package]
+name = "siph"
+version = "0.1.0"
+edition = "2021"
+
+description = "Siphasher program for strings. Returns 64-bit SipHash 2-4 hash over the provided strings."
+license = "MPL-2.0"
+repository = "https://github.com/jq-rs/siph"
+readme = "README.md"
+categories = ["cryptography"]
+keywords = ["hash", "siphash"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+serde_json = "1.0.96"
+siphasher = "0.3.10"
